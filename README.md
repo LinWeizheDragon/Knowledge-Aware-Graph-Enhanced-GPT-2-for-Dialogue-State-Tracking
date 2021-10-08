@@ -1,4 +1,4 @@
-# Knowledge-Aware-Graph-Enhanced-GPT-2-for-Dialogue-State-Tracking
+# Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking
 This is the official repository of EMNLP 2021 paper "Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking".
 The paper will be soon presented at EMNLP 2021, which is now available at [https://arxiv.org/abs/2104.04466v3](https://arxiv.org/abs/2104.04466v3).
 
