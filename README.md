@@ -9,10 +9,14 @@ pip install -r Src/requirements.txt
 ## Prepare Data
 ### MultiWOZ data
 Download the file and unzip to the project folder.
+
 [Data(Google Drive)](https://drive.google.com/file/d/1utytDe3ojKPmDRBQgvm4gW_7Gn3AreBL/view?usp=sharing)
+
 ### Pre-trained models
-Download and extract folders to ./Experiments
-[Pre-trained KAGE-GPT2 models(preparing)]()
+Download and extract folders to `./Experiments`
+
+[Pre-trained KAGE-GPT2 models(Google Drive)](https://drive.google.com/file/d/1ywtOIuQEA1W94mh21klJPM79QL6lv7BS/view?usp=sharing)
+
 [Pre-trained DSTQA models(Google Drive)](https://drive.google.com/file/d/19Dbaiki_dHzUI-PTZBirnjaHInC4HXxB/view?usp=sharing)
 
 
@@ -105,7 +109,9 @@ optional arguments:
 
 ## (Baseline) DSTQA
 This repository also contains code for reproducing DSTQA model
+
 DSTQA was proposed in the following paper:
+
 Li Zhou, Kevin Small. Multi-domain Dialogue State Tracking as Dynamic Knowledge Graph Enhanced Question Answering. In NeurIPS 2019 Workshop on Conversational AI ([PDF](https://arxiv.org/pdf/1911.06192.pdf))
 
 ### Prepare Data
@@ -140,7 +146,7 @@ python main.py ../configs/DSTQA.jsonnet --mode test --experiment_name DSTQA_Base
 ```
 
 ### Sparse Supervision
-First go to Src/models/dstqa/dstqa.py Line 230-234:
+First go to `Src/models/dstqa/dstqa.py Line 230-234`:
 ```
 ## Switch to sparse supervision
 # (1) Full Training
@@ -164,7 +170,9 @@ Below attached the results you expect to get from the pre-trained models:
 | KAGE-GPT2-DSGraph-L4P4K2-SparseSupervision | 0.5023         | 0.9707        | 24    |
 
 Please note that the models released here are reproductions after the publication of our paper.
+
 The numbers reported in the paper are the average of 3 runs, which might differ slightly from what were reported here.
+
 The reproduced models were trained and tested on NVIDIA V100 Clusters, not on the original NVIDIA GTX 3090.
 
 ## Citation
