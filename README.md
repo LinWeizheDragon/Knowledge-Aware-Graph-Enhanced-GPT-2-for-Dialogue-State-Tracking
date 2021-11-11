@@ -1,6 +1,6 @@
 # Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking
 This is the official repository of EMNLP 2021 paper "Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking".
-The paper will be soon presented at EMNLP 2021, which is now available at [https://arxiv.org/abs/2104.04466v3](https://arxiv.org/abs/2104.04466v3).
+The paper was presented at EMNLP 2021, which is now available at [https://aclanthology.org/2021.emnlp-main.620/](https://aclanthology.org/2021.emnlp-main.620/).
 
 ## install requirements
 ```bash
@@ -179,6 +179,22 @@ The reproduced models were trained and tested on NVIDIA V100 Clusters, not on th
 If our research helps you, please kindly cite our paper:
 ```
 Lin, W., Tseng, B. H., & Byrne, B. (2021). Knowledge-Aware Graph-Enhanced GPT-2 for Dialogue State Tracking. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP).
+```
+```
+@inproceedings{lin-etal-2021-knowledge,
+    title = "Knowledge-Aware Graph-Enhanced {GPT}-2 for Dialogue State Tracking",
+    author = "Lin, Weizhe  and
+      Tseng, Bo-Hsiang  and
+      Byrne, Bill",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.620",
+    pages = "7871--7881",
+    abstract = "Dialogue State Tracking is central to multi-domain task-oriented dialogue systems, responsible for extracting information from user utterances. We present a novel hybrid architecture that augments GPT-2 with representations derived from Graph Attention Networks in such a way to allow causal, sequential prediction of slot values. The model architecture captures inter-slot relationships and dependencies across domains that otherwise can be lost in sequential prediction. We report improvements in state tracking performance in MultiWOZ 2.0 against a strong GPT-2 baseline and investigate a simplified sparse training scenario in which DST models are trained only on session-level annotations but evaluated at the turn level. We further report detailed analyses to demonstrate the effectiveness of graph models in DST by showing that the proposed graph modules capture inter-slot dependencies and improve the predictions of values that are common to multiple domains.",
+}
 ```
 
 
